@@ -1,0 +1,61 @@
+ <style>
+ 
+   .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      position: relative;
+    }
+   
+    .btn-google {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25565E;
+      border: #25565E;
+    }
+    .btn-google:hover {
+      background-color: #b18409;
+      border: #b18409;
+    }
+    .btn-google img {
+      margin-right: 10px;
+      width: 30px;
+    }
+  </style>
+
+
+  <div class="container  align-items-center ">
+    <div class="row p-2">
+      <div class="col-md-12">
+        <div class="login-container">
+          <h2 class="text-center mb-4">Giriş Yap</h2>
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control formpassword"  style="height: 50px"  placeholder="Kullanıcı Adı">
+            </div>
+            <div class="form-group   my-2">
+              <input type="password" class="form-control"style="height: 50px"  placeholder="Şifre">
+            </div>
+            <button type="submit" class="btn littlebutton btn-block my-2" >Giriş Yap</button>
+            <hr>
+            <!-- Düzenlenmiş Google ile giriş yap düğmesi -->
+            <button type="button" class="btn btn-danger btn-block btn-google">
+              <img src="~/img/gmail.png" width="30" height="30" alt="google ile giriş yap" >
+              Google ile Giriş Yap
+            </button>
+          </form>
+          <div class="text-center mt-3">
+            <a asp-controller="login" action="register">Hesabınız yok mu? Hemen üye olun.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
